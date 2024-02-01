@@ -1,0 +1,56 @@
+
+*{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background: #121212;
+    color: white;
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    opacity: 0.5;
+}
+.li{  
+    display: flex;
+    gap:25px;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: azure;
+}
+.new-page{
+    text-decoration: none;
+    color: azure;
+}
+
+.content{
+    display: flex;
+    gap: 250px;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+    margin:none;
+}
+.phones{
+background: #ededed;
+}
+.produto-phone{
+    display: flex;
+    flex-direction: column;
+    width:50%
+}
+.phone{
+    display: flex;
+    justify-content:flex-start;
+    height:18rem;
+    width: relative;
+   
+}
+.telefonos-aparecer{
+    border:none;
+    cursor: pointer;
+
+}

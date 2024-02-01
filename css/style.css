@@ -1,6 +1,7 @@
 
 *{
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .navbar {
     display: flex;
@@ -8,20 +9,27 @@
     list-style: none;
     background: #121212;
     color: white;
+    position: fixed;
     height: 30px;
+    width: 100%;
+    opacity: 0.5;
 }
-.li{
+.li{  
     display: flex;
     gap:25px;
-   text-decoration: none;
-   color: azure;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: azure;
+}
+.new-page{
+    text-decoration: none;
+    color: azure;
 }
 .principal{/* parte superior de la pagina  logo y nombre */ 
     display: flex;
     justify-content: space-between;
     align-content:flex-end;
     background:#000000;
-    margin:none;
     height: 100px; 
 }
 .negociot{
@@ -30,13 +38,15 @@
 .content{
     display: flex;
     gap: 250px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    height: 10%;
     margin:none;
 }
 .logo{
-    width: 10%;
+    width: 5%;
     height: auto;
+    margin-top: 60px;
     background:bisque;
 }
 .menu{ /*  parte centrar opciones cpon redirecciones */ 
@@ -58,15 +68,22 @@
     margin-top: 8%;
     margin-bottom: 8%;
 }
-.menut{
+.menu-titulo{
+    font-size: 50px;
+    color:aliceblue;
+}
+.menu-titulo  .menu-texto{
+    text-align: center;
     font-size: 40px;
 }
 .producto{ /* parte donde se muestran productos*/ 
     display: flex;
     justify-content: center;
     gap: 250px;
-    margin-top: 5%;
-    
+    height: 35rem;
+    margin-top: 1%;
+    background:#FAFAFA;
+  
 }
 .productos{
     display: flex;
@@ -74,29 +91,55 @@
     gap: 100px;
     height: 240px;
     margin:40px;
+   
+    
 }
 .imgini{
-    height: 80%
+    height: 22rem;
+ 
+    filter:blur(1px);
+  
+    box-shadow: -1px -1px 56px 66px rgba(227,227,227,1);
+    -webkit-box-shadow: -1px -1px 56px 66px rgba(227,227,227,1);
+    -moz-box-shadow: -1px -1px 56px 66px rgba(227,227,227,1);
+  
 }
 .imgini:hover{
     transition-duration: 1;
     transform: scale(1.1);
+    filter:blur(0px)
 }
 .imgini{
+    background-color:#e5e5e5;
     transition-duration: 1;
     transform: scale(1); 
 }
+.ver-mas{
+    text-decoration: none;
+    color:   #000000;
+    font-size: 30px;
+    background: rgb(99, 94, 94);
+    border:solid #000000
+}
 .contact{/* parte dodne se agrga la informcion de la empresa*/ 
     display: flex;
-    justify-content: center;
+    justify-content:space-around;;
     gap: 250px;
-   margin-top: 90px;
+    margin-top: 1%;
     background: #121212;
     color:white;
     height: 300px;
 }
 .texto-contact{
     font-size: 20px;
+}
+.texto-contact-redes{
+    font-size: 15px;
+}
+/* PAGINA 2 */
+/*producto 1 */
+.telefonos-titulo{
+    margin-top: 30px;
 }
 
 
