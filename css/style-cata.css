@@ -25,17 +25,15 @@
     text-decoration: none;
     color: azure;
 }
-
-.content{
+.content-cata{
     display: flex;
-    gap: 250px;
-    justify-content: space-around;
-    align-items: center;
     height: 10%;
+    gap:25px;
     margin:none;
 }
 .phones{
-background: #ededed;
+background: #F6F6F6;
+margin-top: 25px;
 }
 .produto-phone{
     display: flex;
@@ -45,58 +43,60 @@ background: #ededed;
 .phone{
     display: flex;
     justify-content:flex-start;
-    height:18rem;
+    height:10rem;
     width: relative;
-   
+    margin-left: 20px;
+}
+.phone-clone{
+  height:10rem;
+  width: relative;
+  margin-top: -150px;
+}
+.phone-clone3{
+  height:10rem;
+  width: relative;
+  margin-top: -300px;
 }
 .telefonos-aparecer{
     border:none;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
-
-
-
-
-
-
 .contenedor-imagen {
     display: flex;
     position: relative;
     justify-content: flex-start;
+    gap:28px
   }
-  .imagen-original{
-   
+.imagen-original{
   }
-  .imagen-original,
-  .imagen-duplicada {
+.imagen-original,
+.imagen-duplicada {
     cursor: pointer;
-    transition: transform 0.3s ease;
-    max-width: 100%;
-    height: auto;
-    
+    transition: transform 0.3s ease;   
   }
-  
   .imagen-duplicada {
     position: absolute;
     top: 0;
-    left: 100%;
     opacity: 0;
-    
+    margin-left: 150px;    
   }
-  
   .contenedor-imagen:hover .imagen-original {
     transform: scale(1);
   }
-  
   .contenedor-imagen:hover .imagen-duplicada {
     opacity: 1;
     left: calc(100% + 10px); /* Ajusta la distancia entre las imágenes según tus preferencias */
-    transform: scale(1.3);
+    transform: scale(1.6);
   }
-  
   /* Estilos para el checkbox (oculto) */
-  input[type="checkbox"] {
+input[type="checkbox"] {
     display: none;
   }
+.caracteristicas-phone{
+  display: flex;
+  flex-direction:column;
+  align-content: flex-start;
+  margin-left: 0;
+
   
+}

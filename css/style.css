@@ -38,7 +38,7 @@
 .content{
     display: flex;
     gap: 250px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 10%;
     margin:none;
@@ -87,7 +87,7 @@
 }
 .productos{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 100px;
     height: 240px;
     margin:40px;
