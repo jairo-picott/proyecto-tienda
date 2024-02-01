@@ -52,5 +52,51 @@ background: #ededed;
 .telefonos-aparecer{
     border:none;
     cursor: pointer;
-
+    
 }
+
+
+
+
+
+
+.contenedor-imagen {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+  }
+  .imagen-original{
+   
+  }
+  .imagen-original,
+  .imagen-duplicada {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    
+  }
+  
+  .imagen-duplicada {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    
+  }
+  
+  .contenedor-imagen:hover .imagen-original {
+    transform: scale(1);
+  }
+  
+  .contenedor-imagen:hover .imagen-duplicada {
+    opacity: 1;
+    left: calc(100% + 10px); /* Ajusta la distancia entre las imágenes según tus preferencias */
+    transform: scale(1.3);
+  }
+  
+  /* Estilos para el checkbox (oculto) */
+  input[type="checkbox"] {
+    display: none;
+  }
+  
