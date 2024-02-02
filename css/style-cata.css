@@ -43,19 +43,22 @@ margin-top: 25px;
 .phone{
     display: flex;
     justify-content:flex-start;
-    height:10rem;
+    height:15rem;
     width: relative;
     margin-left: 20px;
 }
 .phone-clone{
   height:10rem;
   width: relative;
+  margin: -150px;
   margin-top: -150px;
+
 }
 .phone-clone3{
   height:10rem;
   width: relative;
-  margin-top: -300px;
+  margin-top: -3px;
+  
 }
 .telefonos-aparecer{
     border:none;
@@ -78,7 +81,8 @@ margin-top: 25px;
     position: absolute;
     top: 0;
     opacity: 0;
-    margin-left: 150px;    
+    margin-left: 150px;  
+     
   }
   .contenedor-imagen:hover .imagen-original {
     transform: scale(1);
@@ -86,7 +90,7 @@ margin-top: 25px;
   .contenedor-imagen:hover .imagen-duplicada {
     opacity: 1;
     left: calc(100% + 10px); /* Ajusta la distancia entre las imágenes según tus preferencias */
-    transform: scale(1.6);
+    transform: scale(2);
   }
   /* Estilos para el checkbox (oculto) */
 input[type="checkbox"] {

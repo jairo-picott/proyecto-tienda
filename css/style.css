@@ -95,8 +95,8 @@
     
 }
 .imgini{
-    height: 22rem;
- 
+    height: 100%;
+    width: auto;
     filter:blur(1px);
   
     box-shadow: -1px -1px 56px 66px rgba(227,227,227,1);
