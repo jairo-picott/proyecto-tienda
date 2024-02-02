@@ -13,6 +13,7 @@
     height: 30px;
     width: 100%;
     opacity: 0.5;
+    z-index: 1;
 }
 .li{  
     display: flex;
@@ -20,6 +21,7 @@
     justify-content: flex-end;
     text-decoration: none;
     color: azure;
+   
 }
 .new-page{
     text-decoration: none;
@@ -29,36 +31,46 @@
     display: flex;
     height: 10%;
     gap:25px;
-    margin:none;
+    margin: 1px 80px;/**/
 }
+/* imagenges y efectos del producto1*/
 .phones{
-background: #F6F6F6;
-margin-top: 25px;
+  background: #F6F6F6;
+  margin-top: 25px;
+  height: 31rem;
+  width: 91%;/**/
 }
 .produto-phone{
     display: flex;
     flex-direction: column;
-    width:50%
+    justify-content: center;
+    width:45%;/**/
+    margin-left: 2%;
 }
 .phone{
     display: flex;
     justify-content:flex-start;
-    height:15rem;
+    height:10rem;
     width: relative;
     margin-left: 20px;
 }
-.phone-clone{
-  height:10rem;
+.phone-clone1{
+  height:15rem;
   width: relative;
-  margin: -150px;
-  margin-top: -150px;
+  margin-left: -190px;
+  margin-top: 118px
+}
+.phone-clone2{
+  height:15rem;
+  width: relative;
+  margin-left: -190px;
+  margin-top: -40px;
 
 }
 .phone-clone3{
-  height:10rem;
+  height:15rem;
   width: relative;
-  margin-top: -3px;
-  
+  margin-top: -200px;
 }
 .telefonos-aparecer{
     border:none;
@@ -69,36 +81,94 @@ margin-top: 25px;
     position: relative;
     justify-content: flex-start;
     gap:28px
-  }
-.imagen-original{
-  }
+}
 .imagen-original,
 .imagen-duplicada {
     cursor: pointer;
-    transition: transform 0.3s ease;   
-  }
-  .imagen-duplicada {
+    transition: transform 0.3s ease;  
+    opacity: 0.5; 
+    filter: blur(1px);
+}
+.imagen-duplicada {
     position: absolute;
     top: 0;
     opacity: 0;
-    margin-left: 150px;  
-     
-  }
-  .contenedor-imagen:hover .imagen-original {
+    margin-left: 150px;
+}
+.contenedor-imagen:hover .imagen-original {
     transform: scale(1);
-  }
-  .contenedor-imagen:hover .imagen-duplicada {
+    opacity: 1;
+    filter: blur(0px);
+}
+.contenedor-imagen:hover .imagen-duplicada {
     opacity: 1;
     left: calc(100% + 10px); /* Ajusta la distancia entre las imágenes según tus preferencias */
     transform: scale(2);
-  }
+    filter: blur(0px);
+    width: auto;
+   
+   
+}
   /* Estilos para el checkbox (oculto) */
+
 input[type="checkbox"] {
     display: none;
-  }
+}
 .caracteristicas-phone{
   display: flex;
   flex-direction:column;
   align-content: flex-start;
   margin-left: 0;
 }
+.contorno{
+  border: #121212 1px solid;
+  border-radius: 7px;
+  height: 100px;
+}
+/* caracterisitacas del productos 1 */ 
+
+.detalles-productos{
+  width: 35%;
+}
+.titulo-phone1{
+  margin-top: 25px;
+  font-size: 40px;
+}
+
+.fa-star{
+  margin-top: 0;
+  font-size: 22px;
+}
+.fa-star:hover{
+  transition-duration: 1s;
+  transform: scale(1.3);
+}
+.fa-star{
+  transition-duration: 1s;
+  transform: scale(1);
+}
+.texto-Producto1{
+  font-size: 20px;
+}
+.precio{
+  font-size: 24px;
+}
+
+.ordenar{
+  font-size: 20px;
+  background-color: green;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.detalles-celular{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 50%;
+  margin: 50px 20px  auto; ;
+  
+}
+
+
+
