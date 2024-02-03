@@ -33,6 +33,12 @@
     gap:25px;
     margin: 1px 80px;/**/
 }
+.encabezado{
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+}
 /* imagenges y efectos del producto1*/
 .phones{
   background: #F6F6F6;

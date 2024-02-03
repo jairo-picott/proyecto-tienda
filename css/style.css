@@ -3,6 +3,7 @@
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -14,7 +15,9 @@
     width: 100%;
     opacity: 0.5;
     font-size: 25px;
+
 }
+
 .li{  
     display: flex;
     gap:25px;
@@ -22,6 +25,7 @@
     text-decoration: none;
     color: azure;
 }
+
 .new-page{
     text-decoration: none;
     color: azure;
@@ -100,9 +104,7 @@
     width: auto;
     filter:blur(1px);
   
-    box-shadow: -1px -1px 56px 66px rgba(227,227,227,1);
-    -webkit-box-shadow: -1px -1px 56px 66px rgba(227,227,227,1);
-    -moz-box-shadow: -1px -1px 56px 66px rgba(227,227,227,1);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   
 }
 .imgini:hover{
@@ -142,5 +144,3 @@
 .telefonos-titulo{
     margin-top: 30px;
 }
-
-
