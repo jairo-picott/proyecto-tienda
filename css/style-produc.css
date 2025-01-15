@@ -1,0 +1,147 @@
+
+*{
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  background: #121212;
+  color: white;
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  align-items: center;
+}
+.navbar-menu{
+  background-color: #121212;;
+  overflow: hidden;
+  width: 80%;
+  height: 100%;
+  justify-content: space-between;
+}
+.navbar-menu a{
+  float: left;
+  display: flex;
+  color: #f9f9f9;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  font: 16px;
+  height: 100%;
+  width: 25%;
+}
+.navbar-menu a:hover {
+  background-color: #565a5c;
+}
+.navbar-menu .icon {
+  display: none;
+}
+.li{  
+  display: flex;
+  gap:25px;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: azure;
+}
+.new-page{
+  text-decoration: none;
+  color: azure;
+}
+.principal{/* parte superior de la pagina  logo y nombre */ 
+  display: flex;
+  justify-content: space-between;
+  align-content:flex-end;
+  background:#000000;
+  height: 80px; 
+}
+
+
+
+.titulo-producto{
+  font-size: 60px;
+}
+.info{
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+.content{
+  display: flex;
+  gap: 250px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.informacion{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.producto-ubica{
+  display: flex ;
+  justify-content: center;
+  margin-top:80px
+}
+.producto-1{
+  gap:10px;
+  width: auto;
+  height: 600px;
+  margin:0;
+  border:#121212 solid;
+}
+.ordenar{
+  font-size:40px;
+  background-color: green;
+  cursor: pointer;
+  border-radius: 10%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact{/* parte dodne se agrga la informcion de la empresa*/ 
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin-top: 1%;
+  background: #121212;
+  color:white;
+  height: 300px;
+  width: 100vw;
+}
+.contact-1{
+  align-items: center;
+  position: relative;
+ 
+  
+}
+.texto-contact{
+  font-size: 20px;
+}
+.texto-contact-redes{
+  font-size: 15px;
+}
+/* PAGINA 2 */
+/*producto 1 */
+.telefonos-titulo{
+  margin-top: 30px;
+}

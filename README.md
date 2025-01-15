@@ -1,8 +1,26 @@
+PROYECTO-SHOP
 
-*{
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+La pagina esta dividida por 7 carpetas de las cuales vamos a utilizar 3
+
+css: en la cual se almacenan todos los archivos css encargados de darle formato forma y color a la pagina
+
+images: en esta se almacenan todas las imágenes utilizadas en la pagina ( estan oresdenas por numeros; tablet1.1 tablet1.2)
+
+phones: en esta se almacenan todos los html utilizados en la pagina 
+
+las paginas estan divididas d manera horizontal por medio de seccion con las clases conten content
+
+en la carpeta phones hay dos tipos de html, los que dirigen a un producto en especifico y los que mandan al catalogo 
+
+los archivos iphone portial-1 tablet-1 y mouse-1 dirigen a un producto en especifico con sus detalles 
+
+los archivos accesorios catalogo portatiles y tablest dirigen al stock general de dicha categoría
+
+el index es el unico archivo html que no esta suelto.
+
+ la barra superior que tiene las opciones de ( catalogo quienes somos y contáctenos ) usa un float:left para permitir que esta baje junto con la pagina sin generar inconvenientes.
+
+```
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -12,34 +30,42 @@
     position: fixed;
     height: 30px;
     width: 100%;
-    opacity: 0.5;
-    z-index: 1;
+    align-items: center;
 }
-.li{  
+
+.navbar-menu{
+    background-color:#121212;
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.navbar-menu a{
+    float: left;
     display: flex;
-    gap:25px;
-    justify-content: flex-end;
+    color: #f9f9f9;
+    text-align: center;
     text-decoration: none;
-    color: azure;
-   
+    align-items: center;
+    font: 16px;
+    height: 100%;
+    width: 25%;
 }
-.new-page{
-    text-decoration: none;
-    color: azure;
+
+.navbar-menu a:hover {
+    background-color: #313131;
 }
-.content-cata{
-    display: flex;
-    height: 10%;
-    gap:25px;
-    margin: 1px 80px;/**/
+
+.navbar-menu .icon {
+    display: none;
 }
-.encabezado{
-  color:white;
-  display: flex;
-  justify-content: space-around;
-  font-size: 16px;
-}
-/* imagenges y efectos del producto1*/
+
+```
+
+codigo de la barra.
+
+```
 .phones{
   background: #F6F6F6;
   margin-top: 25px;
@@ -131,53 +157,6 @@ input[type="checkbox"] {
   border-radius: 7px;
   height: 100px;
 }
-/* caracterisitacas del productos 1 */ 
+```
 
-.detalles-productos{
-  width: 35%;
-}
-.titulo-phone1{
-  margin-top: 25px;
-  font-size: 40px;
-}
-
-.fa-star{
-  margin-top: 0;
-  font-size: 22px;
-}
-.fa-star:hover{
-  transition-duration: 1s;
-  transform: scale(1.3);
-}
-.fa-star{
-  transition-duration: 1s;
-  transform: scale(1);
-}
-.texto-Producto1{
-  font-size: 20px;
-}
-.precio{
-  font-size: 24px;
-}
-
-.ordenar{
-  background-color: rgb(0, 163, 14);
-  text-decoration: none;
-  color:#121212;
-  font-size: 20px;
-  border: #121212 solid 1px;
-  cursor: pointer;
-  border-radius: 1%;
-}
-
-.detalles-celular{
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: 50%;
-  margin: 50px 20px  auto; ;
-  
-}
-
-
-
+con este código se  ajusta la apracion y desaparicion de imágenes en el catalogo 
